@@ -1,4 +1,4 @@
-function directory ($compile, DirectoryService) {
+function directory ($compile, $rootScope, DirectoryService) {
   return {
     restrict: 'E',
     scope: {},
@@ -11,7 +11,7 @@ function directory ($compile, DirectoryService) {
         let directoryDiv = angular.element(document.getElementById('directory'));
         let html = DirectoryService.createDirectory(data.children);
 
-        directoryDiv.html(html);
+        $compile(directoryDiv.html(html))($rootScope.$new());
       });
     }
   };
