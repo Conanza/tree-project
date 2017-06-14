@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Explorer</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="directory/directory.css">
+    <link rel="stylesheet" href="folder/folder.css">
+    <link rel="stylesheet" href="file/file.css">
+  </head>
+  <body ng-app="explorer">
+    <directory></directory>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="index.js"></script>
+    <script src="./dataService/dataService.js"></script>
+    <script src="./directory/service.js"></script>
+    <script src="./directory/directive.js"></script>
+    <script src="./directory/controller.js"></script>
+    <script src="./folder/directive.js"></script>
+    <script src="./file/directive.js"></script>
+
+    <!--  TEMPLATES -->
+    <!--  Angular templates are downloaded via XHR reqs - workaround for serverless solution -->
+    <script type="text/ng-template" id="directory.html">
+      <div id="directory">directory</div>
+    </script>
+
+    <script type="text/ng-template" id="folder.html">
+      <div class="folder">{{ name }}</div>
+      <ng-transclude></ng-transclude>
+    </script>
+
+    <script type="text/ng-template" id="file.html">
+      <div class="file">{{ name }}</div>
+    </script>
+  </body>
+</html>
