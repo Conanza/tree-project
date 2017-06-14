@@ -1,4 +1,4 @@
-function file () {
+function file ($rootScope) {
   return {
     restrict: 'E',
     scope: {
@@ -7,7 +7,15 @@ function file () {
     },
     templateUrl: 'file.html',
     link: (scope, el, attrs, ctrl) => {
-      console.log(scope);
+      scope.selected = false;
+
+      scope.toggleSelect = ev => {
+        ev.stopPropagation();
+        $rootScope.$broadcast('unselectAll');
+        scope.selected = !scope.selected;
+      };
+
+      scope.$on('unselectAll', () => scope.selected = false);
     }
   };
 }

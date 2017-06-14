@@ -1,0 +1,13 @@
+.folder.open,
+.file.open {
+  font-weight: 800;
+}
+.folder.selected,
+.file.selected {
+  background-color: #4285f4;
+}
+.folder:hover,
+.file:hover {
+  background-color: #4285f4;
+  cursor: pointer;
+}

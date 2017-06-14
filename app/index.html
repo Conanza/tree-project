@@ -5,6 +5,7 @@
     <title>Explorer</title>
 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="directory/directory.css">
     <link rel="stylesheet" href="folder/folder.css">
     <link rel="stylesheet" href="file/file.css">
@@ -29,12 +30,23 @@
     </script>
 
     <script type="text/ng-template" id="folder.html">
-      <div class="folder">{{ name }}</div>
-      <ng-transclude></ng-transclude>
+      <div
+        class="folder"
+        ng-class="{'selected':selected,'open':open}"
+        ng-click="toggleOpen($event)"
+      >{{ name }}
+      </div>
+
+      <div class="subfolders" ng-transclude ng-show="open"></ng-transclude></div>
     </script>
 
     <script type="text/ng-template" id="file.html">
-      <div class="file">{{ name }}</div>
+      <div
+        class="file"
+        ng-class="{'selected':selected}"
+        ng-click="toggleSelect($event)"
+      >{{ name }}
+      </div>
     </script>
   </body>
 </html>

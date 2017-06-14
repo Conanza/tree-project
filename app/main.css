@@ -29,6 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	width: 480px;
+	height: 800px;
+  border: 1px solid black;
   font-family: 'Open Sans', sans-serif;
 	line-height: 1;
 }
