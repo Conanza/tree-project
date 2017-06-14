@@ -9,7 +9,8 @@ class DirectoryService {
 
     children.forEach(child => {
       if (child.type === 'folder') {
-        let folder = `<folder name="${child.name}">`;
+        let privacy = !!child.private;
+        let folder = `<folder name="${child.name}" privacy="${privacy}">`;
 
         if (child.children) {
           folder += this.createDirectory(child.children);

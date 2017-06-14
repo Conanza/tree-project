@@ -3,7 +3,7 @@ function file () {
     restrict: 'E',
     scope: {
       name: '@',
-      private: '=?'
+      privacy: '=?'
     },
     templateUrl: 'file.html',
     link: (scope, el, attrs, ctrl) => {

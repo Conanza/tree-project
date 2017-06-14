@@ -3,7 +3,7 @@ function folder () {
     restrict: 'E',
     scope: {
       name: '@',
-      private: '=?'
+      privacy: '=?'
     },
     transclude: true,
     templateUrl: 'folder.html',
