@@ -11,6 +11,14 @@ function folder ($rootScope) {
       scope.open = false;
       scope.selected = false;
 
+      scope.enlargeIconSwitch = () => {
+        if (scope.open) {
+          return scope.selected ? 'white-shrink-icon' : 'black-shrink-icon';
+        } else if (!scope.open) {
+          return scope.selected ? 'white-expand-icon' : 'black-expand-icon';
+        }
+      };
+
       scope.toggleOpen = ev => {
         ev.stopPropagation();
         scope.open = !scope.open;

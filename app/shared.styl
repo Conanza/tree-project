@@ -2,13 +2,23 @@
 
 .folder, .file
   color black
-  &.open
-    font-weight 800
+  width 100%
+  line-height 30px
+  box-sizing border-box
+  white-space nowrap
+  text-overflow ellipsis
+  overflow hidden
   &:hover, &.selected
     color $white
     background-color $blue1
   &:hover
     cursor pointer
+    > .black-expand-icon
+      opacity 1
+      background-position -84px 0
+    > .black-shrink-icon
+      opacity 1
+      background-position -98px 0
 
 // 14x14 icons
 .folder-icon, .private-folder-icon, .file-icon,
@@ -26,10 +36,13 @@
 .file-icon
   background-position -28px 0
 .close-icon
+  opacity .3
   background-position -42px 0
 .black-expand-icon
+  opacity .4
   background-position -56px 0
 .black-shrink-icon
+  opacity .4
   background-position -70px 0
 .white-expand-icon
   background-position -84px 0

@@ -24,15 +24,22 @@
   padding-left: 14px;
 }
 #directory .header .close {
-  opacity: 0.3;
   float: right;
   margin: 18px 14px 0 0;
+}
+#directory .header .close:hover {
+  cursor: pointer;
 }
 #directory .label {
   color: #bebebe;
   line-height: 40px;
   padding-left: 14px;
   box-shadow: 0 0 2px #c9c9c9;
+}
+#directory .folders {
+  height: 483px;
+  overflow-y: scroll;
+  margin-top: 14px;
 }
 #directory .footer {
   width: 100%;
@@ -61,4 +68,7 @@
   width: 60px;
   color: #fff;
   background-color: #4688f1;
+}
+#directory .footer .upload-button:hover {
+  cursor: pointer;
 }

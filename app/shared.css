@@ -1,10 +1,12 @@
 .folder,
 .file {
   color: #000;
-}
-.folder.open,
-.file.open {
-  font-weight: 800;
+  width: 100%;
+  line-height: 30px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .folder:hover,
 .file:hover,
@@ -16,6 +18,16 @@
 .folder:hover,
 .file:hover {
   cursor: pointer;
+}
+.folder:hover > .black-expand-icon,
+.file:hover > .black-expand-icon {
+  opacity: 1;
+  background-position: -84px 0;
+}
+.folder:hover > .black-shrink-icon,
+.file:hover > .black-shrink-icon {
+  opacity: 1;
+  background-position: -98px 0;
 }
 .folder-icon,
 .private-folder-icon,
@@ -40,12 +52,15 @@
   background-position: -28px 0;
 }
 .close-icon {
+  opacity: 0.3;
   background-position: -42px 0;
 }
 .black-expand-icon {
+  opacity: 0.4;
   background-position: -56px 0;
 }
 .black-shrink-icon {
+  opacity: 0.4;
   background-position: -70px 0;
 }
 .white-expand-icon {

@@ -24,15 +24,21 @@ $border-line = 1px solid $grey2
       float left
       padding-left 14px
     .close
-      opacity .3
       float right
       margin 18px 14px 0 0
+      &:hover
+        cursor pointer
 
   .label
     color $grey3
     line-height 40px
     padding-left 14px
     box-shadow 0 0 2px $grey2
+
+  .folders
+    height 483px
+    overflow-y scroll
+    margin-top 14px
 
   .footer
     width 100%
@@ -57,3 +63,5 @@ $border-line = 1px solid $grey2
       width 60px
       color $white
       background-color $blue1
+      &:hover
+        cursor pointer

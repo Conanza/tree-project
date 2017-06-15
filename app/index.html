@@ -45,9 +45,15 @@
     <script type="text/ng-template" id="folder.html">
       <div
         class="folder"
-        ng-class="{'selected':selected,'open':open}"
+        ng-class="{'selected':selected}"
         ng-click="toggleOpen($event)"
-      >{{ name }}
+      >
+        <div class="enlarge" ng-class="enlargeIconSwitch()"></div>
+        <div
+          class="icon"
+          ng-class="{'private-folder-icon':privacy,'folder-icon':!privacy}"
+        ></div>
+        {{ name }}
       </div>
 
       <div class="subfolders" ng-transclude ng-show="open"></ng-transclude></div>
@@ -58,7 +64,10 @@
         class="file"
         ng-class="{'selected':selected}"
         ng-click="toggleSelect($event)"
-      >{{ name }}
+      >
+        <div class="enlarge"></div>
+        <div class="icon file-icon"></div>
+        {{ name }}
       </div>
     </script>
   </body>
