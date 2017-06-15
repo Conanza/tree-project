@@ -1,3 +1,13 @@
+.folders > folder > .folder,
+.folders > file > .file {
+  padding-left: 12.5px;
+}
+.folders > folder > .subfolders {
+  padding-left: 36.5px;
+}
+.subfolders {
+  padding-left: 24px;
+}
 .enlarge,
 .icon {
   float: left;

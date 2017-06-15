@@ -15,6 +15,10 @@ angular
 data = {
   "children": [
     {
+      'name': 'test file',
+      'type': 'file'
+    },
+    {
       "name": "Main Folder",
       "type": "folder",
       "children": [
