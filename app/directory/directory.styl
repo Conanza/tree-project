@@ -19,8 +19,13 @@ $border-line = 1px solid $grey2
   .header
     background-color $grey1
     height 50px
-    .title, .close
-      width 50%
+    .title
+      line-height 50px
+      float left
+      padding-left 14px
+    .close
+      float right
+      margin 18px 14px 0 0
 
   .label
     height 40px
@@ -32,22 +37,20 @@ $border-line = 1px solid $grey2
     position absolute
     bottom 0
     border-top $border-line
-    .link, .upload
-      width 50%
+    .link, .upload-button
       box-sizing border-box
-      float left
     .link
+      float left
       line-height 50px
       padding-left 14px
       color $blue1
-    .upload .button
+    .upload-button
       border solid 1px $blue2
       border-radius 1px
-      position absolute
-      right 0
+      float right
       margin 10px 14px 0 0
       text-align center
       line-height 28px
-      width 58px
+      width 60px
       color $white
       background-color $blue1
