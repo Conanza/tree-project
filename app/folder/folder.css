@@ -2,7 +2,10 @@
   padding-left: 12.5px;
 }
 .subfolders {
-  position: relative;
+  padding-left: 12.5px;
+}
+.subfolders .folder {
+  padding-left: 25px;
 }
 .enlarge,
 .icon {
