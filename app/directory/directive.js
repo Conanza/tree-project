@@ -8,10 +8,10 @@ function directory ($compile, $rootScope, DirectoryService) {
     templateUrl: 'directory.html',
     link: (scope, el, attrs, ctrl) => {
       scope.$watch(() => ctrl.data, data => {
-        let directoryDiv = angular.element(document.getElementById('directory'));
+        let foldersDiv = angular.element(document.getElementsByClassName('folders')[0]);
         let html = DirectoryService.createDirectory(data.children);
 
-        $compile(directoryDiv.html(html))($rootScope.$new());
+        $compile(foldersDiv.html(html))($rootScope.$new());
       });
     }
   };

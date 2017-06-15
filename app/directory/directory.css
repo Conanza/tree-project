@@ -1,0 +1,58 @@
+#directory {
+  box-shadow: 0 20px 40px 10px #c9c9c9;
+  background-color: #fff;
+  position: relative;
+  height: 640px;
+  width: 320px;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  margin-top: 80px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#directory .header,
+#directory .label {
+  border-bottom: 1px solid #c9c9c9;
+}
+#directory .header {
+  background-color: #f5f5f5;
+  height: 50px;
+}
+#directory .header .title,
+#directory .header .close {
+  width: 50%;
+}
+#directory .label {
+  height: 40px;
+  box-shadow: 0 0 2px #c9c9c9;
+}
+#directory .footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #c9c9c9;
+}
+#directory .footer .link,
+#directory .footer .upload {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+}
+#directory .footer .link {
+  line-height: 50px;
+  padding-left: 14px;
+  color: #4688f1;
+}
+#directory .footer .upload .button {
+  border: solid 1px #3e7bde;
+  border-radius: 1px;
+  position: absolute;
+  right: 0;
+  margin: 10px 14px 0 0;
+  text-align: center;
+  line-height: 28px;
+  width: 58px;
+  color: #fff;
+  background-color: #4688f1;
+}

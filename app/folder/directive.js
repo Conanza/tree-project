@@ -19,11 +19,14 @@ function folder ($rootScope) {
 
       scope.toggleSelect = ev => {
         ev.stopPropagation();
-        $rootScope.$broadcast('unselectAll');
+        $rootScope.$broadcast('unselectAll', scope.$id);
         scope.selected = !scope.selected;
       };
 
-      scope.$on('unselectAll', () => scope.selected = false);
+      scope.$on('unselectAll', (ev, id) => {
+        if (id === scope.$id) return;
+        scope.selected = false;
+      });
     }
   };
 }

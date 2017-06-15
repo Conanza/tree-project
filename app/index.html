@@ -26,7 +26,22 @@
     <!--  TEMPLATES -->
     <!--  Angular templates are downloaded via XHR reqs - workaround for serverless solution -->
     <script type="text/ng-template" id="directory.html">
-      <div id="directory">directory</div>
+      <main id="directory">
+        <header class="header">
+          <div class="title">Title</div>
+          <div class="close">
+            <div class="close-icon"></div>
+          </div>
+        </header>
+        <div class="label">Label</div>
+        <div class="folders"></div>
+        <footer class="footer">
+          <div class="link">Link</div>
+          <div class="upload">
+            <div class="button">Done</div>
+          </div>
+        </footer>
+      </main>
     </script>
 
     <script type="text/ng-template" id="folder.html">

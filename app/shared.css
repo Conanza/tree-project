@@ -1,13 +1,56 @@
+.folder,
+.file {
+  color: #000;
+}
 .folder.open,
 .file.open {
   font-weight: 800;
 }
+.folder:hover,
+.file:hover,
 .folder.selected,
 .file.selected {
-  background-color: #4285f4;
+  color: #fff;
+  background-color: #4688f1;
 }
 .folder:hover,
 .file:hover {
-  background-color: #4285f4;
   cursor: pointer;
+}
+.folder-icon,
+.private-folder-icon,
+.file-icon,
+.close-icon,
+.black-expand-icon,
+.black-shrink-icon,
+.white-expand-icon,
+.white-shrink-icon {
+  width: 14px;
+  height: 14px;
+  background-image: url("./assets/images/icon-sprite.png");
+  background-repeat: no-repeat;
+}
+.folder-icon {
+  background-position: 0 0;
+}
+.private-folder-icon {
+  background-position: -14px 0;
+}
+.file-icon {
+  background-position: -28px 0;
+}
+.close-icon {
+  background-position: -42px 0;
+}
+.black-expand-icon {
+  background-position: -56px 0;
+}
+.black-shrink-icon {
+  background-position: -70px 0;
+}
+.white-expand-icon {
+  background-position: -84px 0;
+}
+.white-shrink-icon {
+  background-position: -98px 0;
 }
