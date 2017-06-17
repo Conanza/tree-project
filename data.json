@@ -25,7 +25,7 @@
                       "type": "file"
                     }
                   ]
-                },
+                }
 
               ]
             },
@@ -39,7 +39,7 @@
               "children": [
                 {
                   "name": "File",
-                  "type": "file",
+                  "type": "file"
                 }
               ]
             },
@@ -90,7 +90,7 @@
       "children": [
         {
           "name": "File",
-          "type": "file",
+          "type": "file"
         }
       ]
     },
@@ -100,7 +100,7 @@
       "children": [
         {
           "name": "Extremely long file name 3847283948383837472738690283472394256982734982349871203984569872340981234",
-          "type": "file",
+          "type": "file"
         }
       ]
     }
