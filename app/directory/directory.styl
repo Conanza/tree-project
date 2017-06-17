@@ -1,6 +1,9 @@
 @import "../colors.styl"
 $border-line = 1px solid $grey2
 
+#hidden-file-input
+  display none
+
 #directory
   box-shadow 0 20px 40px 10px $grey2
   background-color $white
@@ -67,3 +70,5 @@ $border-line = 1px solid $grey2
       background-color $blue1
       &:hover
         cursor pointer
+      &:active
+        background-color $blue2

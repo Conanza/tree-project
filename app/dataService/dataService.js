@@ -1,10 +1,24 @@
 class DataService {
-  constructor () {
-    this.data = data;
+  constructor ($q) {
+    this.$q = $q;
   }
 
   fetchData () {
-    return this.data;
+    return data;
+  }
+
+  readData (file) {
+    let deferred = this.$q.defer();
+    let reader = new FileReader();
+
+    reader.onloadend = ev => {
+      if (reader.readyState === reader.DONE) {
+        deferred.resolve(reader.result);
+      }
+    };
+    reader.readAsText(file);
+
+    return deferred.promise;
   }
 }
 

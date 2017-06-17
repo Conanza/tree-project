@@ -37,7 +37,8 @@
         <div class="folders"></div>
         <footer class="footer">
           <div class="link">Link</div>
-          <div class="upload-button">Done</div>
+          <div class="upload-button" ng-click="directory.triggerFileSelect()">Upload</div>
+          <input id="hidden-file-input" type="file" accept="application/json"></input>
         </footer>
       </main>
     </script>
