@@ -1,0 +1,92 @@
+{
+  "children": [
+    {
+      "name": "app",
+      "type": "folder",
+      "children": [
+        {
+          "name": "assets",
+          "type": "folder",
+          "children": [
+            {
+              "name": "images",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "icon-sprite.png",
+                  "type": "file"
+                },
+                {
+                  "name": "mockup.png",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "directory",
+      "type": "folder",
+      "private": false,
+      "children": [
+        {
+          "name": "controller.js",
+          "type": "file"
+        },
+        {
+          "name": "directive.js",
+          "type": "file"
+        },
+        {
+          "name": "service.js",
+          "type": "file"
+        },
+        {
+          "name": "directory.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "node_modules",
+      "private": true,
+      "type": "folder",
+      "children": [
+        {
+          "name": "angular",
+          "type": "folder",
+          "children": [
+            {
+              "name": "angular.js",
+              "type": "file"
+            },
+            {
+              "name": "angular.min.js",
+              "type": "file"
+            },
+            {
+              "name": "LICENSE.md",
+              "type": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "type": "folder",
+      "children": [
+        {
+          "name": "data.json",
+          "type": "file"
+        },
+        {
+          "name": "data2.json",
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}
